@@ -2,10 +2,10 @@ syntax on
 
 set t_Co=256
 set background=dark
-colorscheme twilight256
+colorscheme darcula
 
 if has("gui_running")
-    set guifont=Dejavu\ Sans\ Mono\ 9
+    set guifont=Dejavu\ Sans\ Mono\ 10
     set guioptions=acei
     set columns=175
     set lines=45
