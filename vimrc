@@ -1,7 +1,8 @@
 syntax on
 
 set t_Co=256
-colorscheme xoria256
+set background=dark
+colorscheme twilight256
 
 if has("gui_running")
     set guifont=Dejavu\ Sans\ Mono\ 9
