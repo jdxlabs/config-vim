@@ -2,7 +2,7 @@ syntax on
 
 set t_Co=256
 set background=dark
-colorscheme darcula
+colorscheme xoria256
 
 if has("gui_running")
     set guifont=Dejavu\ Sans\ Mono\ 10
