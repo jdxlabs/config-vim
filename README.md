@@ -1,1 +1,1 @@
-# vimfiles
+This is my ~/.vim dir
