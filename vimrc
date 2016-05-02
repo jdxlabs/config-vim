@@ -8,9 +8,9 @@ colorscheme molokai
 " GUI
 if has("gui_running")
     set guioptions=acei
-    set guifont=Dejavu\ Sans\ Mono\ 9
-    set columns=170
-    set lines=45
+    set guifont=Dejavu\ Sans\ Mono\ 10
+    set columns=205
+    set lines=55
 endif
 
 " indentations
