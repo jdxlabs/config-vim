@@ -8,9 +8,9 @@ colorscheme smyck
 " GUI
 if has("gui_running")
     set guioptions=acei
-    set guifont=Dejavu\ Sans\ Mono\ 9
-    set columns=170
-    set lines=55
+    set guifont=Dejavu\ Sans\ Mono\ 10
+    set columns=160
+    set lines=40
 endif
 
 " indentations
@@ -20,9 +20,23 @@ set shiftwidth=4           " On pressing tab, insert 4 spaces
 set expandtab
 
 set nu
+set mouse=a
+set hidden
 
 " NERDTree
-set mouse=a
-let NERDTreeWinSize = 35
+let NERDTreeWinSize = 38
 nnoremap <silent> <F3> :NERDTreeToggle<cr>
+
+" custom mappings
+vmap <C-S-c> "+y
+map <C-S-v> "+p
+imap <C-S-v> <esc><C-S-v>
+map bn :bn<cr>
+map bp :bp<cr>
+map bd :bp<bar>bd! #<cr>
+map bl :buffers<cr>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
