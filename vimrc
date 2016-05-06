@@ -1,17 +1,18 @@
 syntax on
 
 " colorscheme
-set t_Co=256
 set background=dark
-colorscheme smyck
+"set t_Co=256
+"colorscheme smyck
+colorscheme default
 
 " GUI
-if has("gui_running")
-    set guioptions=acei
-    set guifont=Dejavu\ Sans\ Mono\ 10
-    set columns=160
-    set lines=40
-endif
+"if has("gui_running")
+"    set guioptions=acei
+"    set guifont=Dejavu\ Sans\ Mono\ 10
+"    set columns=160
+"    set lines=40
+"endif
 
 " indentations
 filetype plugin indent on  " show existing tab with 4 spaces width
@@ -19,18 +20,19 @@ set tabstop=4              " when indenting with '>', use 4 spaces width
 set shiftwidth=4           " On pressing tab, insert 4 spaces
 set expandtab
 
-set nu
-set mouse=a
-set hidden
+set nonu
+set history=200
 
 " NERDTree
-let NERDTreeWinSize = 38
-nnoremap <silent> <F3> :NERDTreeToggle<cr>
+"set mouse=a
+"set hidden
+"let NERDTreeWinSize = 38
+"nnoremap <silent> <F3> :NERDTreeToggle<cr>
 
 " custom mappings
-vmap <C-S-c> "+y
-map <C-S-v> "+p
-imap <C-S-v> <esc><C-S-v>
+"vmap <C-S-c> "+y
+"map <C-S-v> "+p
+"imap <C-S-v> <esc><C-S-v>
 map bn :bn<cr>
 map bp :bp<cr>
 map bd :bp<bar>bd! #<cr>
