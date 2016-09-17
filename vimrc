@@ -2,17 +2,19 @@ syntax on
 
 " colorscheme
 set background=dark
-"set t_Co=256
-"colorscheme smyck
-colorscheme default
+set t_Co=256
+colorscheme smyck
 
 " GUI
-"if has("gui_running")
-"    set guioptions=acei
-"    set guifont=Dejavu\ Sans\ Mono\ 10
-"    set columns=160
-"    set lines=40
-"endif
+if has("gui_running")
+    "set guioptions-=m  "remove menu bar
+    set guioptions-=T  "remove toolbar
+    set guioptions-=r  "remove right-hand scroll bar
+    set guioptions-=L  "remove left-hand scroll bar
+    set guifont=Monospace\ 10
+    set columns=140
+    set lines=40
+endif
 
 " indentations
 filetype plugin indent on  " show existing tab with 4 spaces width
