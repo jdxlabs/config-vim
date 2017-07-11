@@ -42,10 +42,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Bundles list
-Plugin 'dracula/vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Bundle 'kien/ctrlp.vim'
+Bundle 'vim-airline/vim-airline'
+Bundle 'liuchengxu/space-vim-dark'
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -108,11 +107,7 @@ autocmd BufEnter * :syntax sync fromstart
 
 set t_Co=256
 set background=dark
-"colorscheme dracula
-colorscheme xoria256
-
-highlight NonText ctermfg=237 guifg=#3a3a3a ctermbg=234 guibg=#1c1c1c cterm=none gui=none
-highlight SpecialKey ctermfg=237 guifg=#3a3a3a ctermbg=234 guibg=#1c1c1c cterm=none gui=none
+colorscheme space-vim-dark
 
 if has("gui_running")
     set guifont=Dejavu\ Sans\ Mono\ 9
