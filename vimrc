@@ -6,6 +6,7 @@
 "       F1 - Show help
 "       F2 - Unactive search highlight
 "       F3 - NERDTree
+"       F4   Paste toggle
 "       F6 - Spellchecking English
 "       F7 - Spellchecking French
 "       F8 - Unactive Spellchecking
@@ -77,6 +78,8 @@ let g:mapleader = ","
 nmap <leader>s :source ~/.vimrc<cr>
 nmap <leader>e :e! ~/.vimrc<cr>
 
+set pastetoggle=<F4>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -111,8 +114,7 @@ colorscheme space-vim-dark
 
 if has("gui_running")
     set guifont=Dejavu\ Sans\ Mono\ 9
-    "set guioptions=acei
-    "set guioptions-=m  "remove menu bar
+    set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
     set guioptions-=L  "remove left-hand scroll bar
