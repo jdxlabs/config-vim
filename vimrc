@@ -52,16 +52,6 @@ nmap <leader>e :e! ~/.vimrc<cr>
 
 filetype plugin indent on  " show existing tab with 4 spaces width
 
-" custom mappings
-map bn :bn<cr>
-map bp :bp<cr>
-map bd :bp<bar>bd! #<cr>
-map bl :buffers<cr>
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -212,9 +202,11 @@ noremap <C-j> <C-W>j
 noremap <C-k> <C-W>k
 noremap <C-l> <C-W>l
 
-" Previous/Next Buffer
-noremap <C-tab> :bp!<cr>
+" Moving between buffers
 noremap <tab> :bn!<cr>
+noremap <C-tab> :bp!<cr>
+map bd :bp<bar>bd! #<cr>
+map bl :buffers<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Files / Backups
