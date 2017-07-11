@@ -29,6 +29,34 @@
 "       <leader>t - Show tasks list
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Vundle
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Bundles list
+Plugin 'dracula/vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+call vundle#end()            " required
+filetype plugin indent on
+
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
@@ -49,8 +77,6 @@ let g:mapleader = ","
 " Handle .vimrc
 nmap <leader>s :source ~/.vimrc<cr>
 nmap <leader>e :e! ~/.vimrc<cr>
-
-filetype plugin indent on  " show existing tab with 4 spaces width
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Interface
@@ -82,6 +108,7 @@ autocmd BufEnter * :syntax sync fromstart
 
 set t_Co=256
 set background=dark
+"colorscheme dracula
 colorscheme xoria256
 
 highlight NonText ctermfg=237 guifg=#3a3a3a ctermbg=234 guibg=#1c1c1c cterm=none gui=none
@@ -226,8 +253,9 @@ autocmd BufEnter * :lcd %:p:h
 set autochdir
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugins
+" Plugins configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " NERDTree
 let NERDTreeWinSize = 40
 nnoremap <silent> <F3> :NERDTreeToggle<cr>
