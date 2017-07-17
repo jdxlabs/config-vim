@@ -65,10 +65,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp1252
 set viminfo='20,\"500,h
-
 set backspace=indent,eol,start
-set mouse=a         " Unactive mouse
-set mousehide       " Mouse hidden when not used
 
 " Define mapleader
 let mapleader = ","
