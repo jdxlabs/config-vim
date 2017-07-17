@@ -135,7 +135,8 @@ set shiftwidth=4    " On pressing tab, insert n spaces
 set shiftround      " Tabs are always multiples of shiftwidth (<<, >>)
 
 " Display of invisible characters
-set list listchars=tab:»\ ,eol:¬
+set list listchars=tab:»\ ,
+"set list listchars=tab:»\ ,eol:¬
 nmap <leader>l :set list!<cr>
 
 " Automatically removes end-of-line spaces
