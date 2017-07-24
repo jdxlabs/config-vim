@@ -123,9 +123,6 @@ endif
 " Indentation - Tab management / spaces
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set autoindent
-set smartindent
-
-:inoremap # X<C-H># " See ':help smartindent'
 
 set smarttab        " 'shiftwidth' at line start, '(soft)tabstop' elsewhere
 set expandtab       " Use spaces insteed of tabs
