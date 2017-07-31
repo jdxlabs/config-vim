@@ -274,4 +274,8 @@ let g:tlRememberPosition = 1
 let g:vorax_dbexplorer_side = 1
 let g:vorax_dbexplorer_width = 40
 
+" Vim-airline
+let g:airline_powerline_fonts=1 " Let airline plugin use the arrow effect of powerline
+let g:airline_theme="onedark"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
