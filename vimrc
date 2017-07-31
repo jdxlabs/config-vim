@@ -45,7 +45,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Bundles list
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-airline/vim-airline'
-"Bundle 'liuchengxu/space-vim-dark'
+Bundle 'joshdick/onedark.vim'
+Bundle 'sheerun/vim-polyglot'
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -107,10 +108,8 @@ autocmd BufEnter * :syntax sync fromstart
 
 set t_Co=256
 set background=dark
-colorscheme xoria256
 
-highlight NonText ctermfg=237 guifg=#3a3a3a ctermbg=234 guibg=#1c1c1c cterm=none gui=none
-highlight SpecialKey ctermfg=237 guifg=#3a3a3a ctermbg=234 guibg=#1c1c1c cterm=none gui=none
+colorscheme onedark
 
 if has("gui_running")
     set guifont=Dejavu\ Sans\ Mono\ 9
