@@ -231,7 +231,7 @@ noremap <C-l> <C-W>l
 
 " Moving between buffers
 noremap <tab> :bn!<cr>
-noremap <C-tab> :bp!<cr>
+noremap <S-tab> :bp!<cr>
 map bd :bp<bar>bd! #<cr>
 map bl :buffers<cr>
 
