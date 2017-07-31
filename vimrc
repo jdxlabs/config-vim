@@ -45,7 +45,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Bundles list
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-airline/vim-airline'
-Bundle 'liuchengxu/space-vim-dark'
+"Bundle 'liuchengxu/space-vim-dark'
 
 call vundle#end()            " required
 filetype plugin indent on
@@ -107,7 +107,10 @@ autocmd BufEnter * :syntax sync fromstart
 
 set t_Co=256
 set background=dark
-colorscheme space-vim-dark
+colorscheme xoria256
+
+highlight NonText ctermfg=237 guifg=#3a3a3a ctermbg=234 guibg=#1c1c1c cterm=none gui=none
+highlight SpecialKey ctermfg=237 guifg=#3a3a3a ctermbg=234 guibg=#1c1c1c cterm=none gui=none
 
 if has("gui_running")
     set guifont=Dejavu\ Sans\ Mono\ 9
@@ -117,6 +120,12 @@ if has("gui_running")
     set guioptions-=L  "remove left-hand scroll bar
     set columns=185
     set lines=80
+endif
+
+if &term =~ '256color'
+    " Disable Background Color Erase (BCE) so that color schemes
+    " work properly when Vim is used inside tmux and GNU screen.
+    set t_ut=
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
