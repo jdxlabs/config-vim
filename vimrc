@@ -145,18 +145,18 @@ set list listchars=tab:»\ ,
 nmap <leader>l :set list!<cr>
 
 " Automatically removes end-of-line spaces
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
-function! <SID>StripTrailingWhitespaces()
-    " First, save last search and current position
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Second, do the job
-    %s/\s\+$//e
-    " Third, restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
-endfunction
+" autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+" function! <SID>StripTrailingWhitespaces()
+"     " First, save last search and current position
+"     let _s=@/
+"     let l = line(".")
+"     let c = col(".")
+"     " Second, do the job
+"     %s/\s\+$//e
+"     " Third, restore previous search history, and cursor position
+"     let @/=_s
+"     call cursor(l, c)
+" endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Edition
