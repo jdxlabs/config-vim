@@ -49,7 +49,8 @@ Bundle 'joshdick/onedark.vim'
 Bundle 'sheerun/vim-polyglot'
 
 call vundle#end()            " required
-filetype plugin indent on
+"filetype plugin indent on
+filetype on
 
 " Brief help
 " :PluginList       - lists configured plugins
