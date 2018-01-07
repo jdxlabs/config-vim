@@ -4,6 +4,7 @@
 
   * First, get Vundle : `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
   * Then, install plugins : `:PluginInstall`
+  * If you want to active the linter for js : `sudo npm install eslint --global`
 
 ## Fonts install for compatibility with vim-airline plugin
 ```

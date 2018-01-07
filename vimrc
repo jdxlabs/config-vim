@@ -47,6 +47,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-airline/vim-airline'
 Bundle 'joshdick/onedark.vim'
 Bundle 'sheerun/vim-polyglot'
+Bundle 'vim-syntastic/syntastic'
 
 call vundle#end()            " required
 "filetype plugin indent on
@@ -278,5 +279,17 @@ let g:vorax_dbexplorer_width = 40
 " Vim-airline
 let g:airline_powerline_fonts=1 " Let airline plugin use the arrow effect of powerline
 let g:airline_theme="onedark"
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
