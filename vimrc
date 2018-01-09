@@ -48,6 +48,7 @@ Bundle 'vim-airline/vim-airline'
 Bundle 'joshdick/onedark.vim'
 Bundle 'sheerun/vim-polyglot'
 Bundle 'vim-syntastic/syntastic'
+Bundle 'prettier/vim-prettier'
 
 call vundle#end()            " required
 "filetype plugin indent on
