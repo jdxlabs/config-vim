@@ -193,6 +193,10 @@ inoremap <c-space> <c-x><c-o> " Keyboard shortcut for omnifunc keyboard
 
 set diffopt=filler,iwhite,vertical " Options for diff mode
 
+function! PrettyJson()
+:%!python -m json.tool
+endfunction
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Folding
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
