@@ -15,3 +15,7 @@ fc-cache -f -v
 mkdir -p ~/.config/fontconfig/conf.d/
 cp 10-powerline-symbols.conf ~/.config/fontconfig/conf.d
 ```
+
+For Mac users :  
+- install the OTF with Font book
+- In Iterm > Preferences > Profiles > Text, select Powerline
