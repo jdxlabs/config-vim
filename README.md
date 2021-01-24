@@ -7,6 +7,8 @@
   * If you want to active the linter for js : `sudo npm install eslint --global`
 
 ## Fonts install for compatibility with vim-airline plugin
+
+For Linux users :  
 ```
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
@@ -19,3 +21,7 @@ cp 10-powerline-symbols.conf ~/.config/fontconfig/conf.d
 For Mac users :  
 - install the OTF with Font book
 - In Iterm > Preferences > Profiles > Text, select Powerline
+
+For Windows users (with WSL) :  
+- Download the "DejaVu Sans Mono for Powerline.ttf" file [here](https://github.com/powerline/fonts/tree/master/DejaVuSansMono)
+- Drag and drop it in Fonts
